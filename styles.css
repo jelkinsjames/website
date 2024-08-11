@@ -1,5 +1,5 @@
 /* This is a comment in CSS */
-body, ul {
+body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
   color: #333333;
@@ -32,18 +32,11 @@ img {
   height: auto;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 /* Navigation */
 
 nav {
-  background-color: #333
+  list-style-type: none;
+  background-color: #5b6fb0;
 }
 
 .navbar {
