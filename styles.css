@@ -41,7 +41,7 @@ nav {
 
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   padding: 10px 0;
 }
 
