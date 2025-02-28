@@ -1,14 +1,26 @@
-/* This is a comment in CSS */
+/* 
+Author: Julian Elkins James
+Date: 2025-02-28
+*/
+
+:root {
+  --primary-color: #5b6fb0;
+  --secondary-color: #008CBA;
+  --text-color: #333333;
+  --background-color: #f0f0f0;
+  --navbar-hover-color: #575757;
+}
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  color: #333333;
+  background-color: var(--background-color);
+  color: var(--text-color);
   margin: 0;
   padding: 0;
 }
 
 h1 {
-  color: #5b6fb0;
+  color: var(--primary-color);
   text-align: center;
 }
 
@@ -19,7 +31,7 @@ p {
 }
 
 a {
-  color: #008CBA;
+  color: var(--secondary-color);
   text-decoration: none;
 }
 
@@ -30,13 +42,17 @@ a:hover {
 img {
   max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
-/* Navigation */
-
 nav {
-  list-style-type: none;
-  background-color: #5b6fb0;
+  background-color: var(--primary-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .navbar {
@@ -50,6 +66,7 @@ nav {
 }
 
 .navbar a {
+  display: block;
   text-decoration: none;
   color: white;
   font-size: 18px;
@@ -57,16 +74,25 @@ nav {
   transition: background-color 0.3s ease;
 }
 
-.navbar a:hover {
-  background-color: #575757;
-  border-radius: 4px;
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-/* Responsive design: Stack items vertically on small screens */
+.navbar a:hover {
+  background-color: var(--navbar-hover-color);
+  border-radius: 4px;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Stacks items vertically on small screens */
 @media (max-width: 600px) {
   .navbar {
       flex-direction: column;
       align-items: center;
+      padding: 10px;
   }
 
   .navbar li {
