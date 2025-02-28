@@ -3,16 +3,24 @@ Author: Julian Elkins James
 Date: 2025-02-28
 */
 
+:root {
+  --primary-color: #5b6fb0;
+  --secondary-color: #008CBA;
+  --text-color: #333333;
+  --background-color: #f0f0f0;
+  --navbar-hover-color: #575757;
+}
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  color: #333333;
+  background-color: var(--background-color);
+  color: var(--text-color);
   margin: 0;
   padding: 0;
 }
 
 h1 {
-  color: #5b6fb0;
+  color: var(--primary-color);
   text-align: center;
 }
 
@@ -23,7 +31,7 @@ p {
 }
 
 a {
-  color: #008CBA;
+  color: var(--secondary-color);
   text-decoration: none;
 }
 
@@ -36,11 +44,8 @@ img {
   height: auto;
 }
 
-/* Navigation */
-
 nav {
-  list-style-type: none;
-  background-color: #5b6fb0;
+  background-color: var(--primary-color);
 }
 
 .navbar {
@@ -62,11 +67,11 @@ nav {
 }
 
 .navbar a:hover {
-  background-color: #575757;
+  background-color: var(--navbar-hover-color);
   border-radius: 4px;
 }
 
-/* Responsive design: Stack items vertically on small screens */
+/* Stacks items vertically on small screens */
 @media (max-width: 600px) {
   .navbar {
       flex-direction: column;
