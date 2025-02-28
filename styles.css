@@ -5,7 +5,7 @@ Date: 2025-02-28
 
 :root {
   --primary-color: #5b6fb0;
-  --secondary-color: #008CBA;
+  --secondary-color: #5b6fb0bd;
   --text-color: #333333;
   --background-color: #f0f0f0;
   --navbar-hover-color: #575757;
@@ -21,7 +21,14 @@ body {
 
 h1 {
   color: var(--primary-color);
+  font-size: 30px;
   text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  color: var(--secondary-color);
+  margin: 20px;
 }
 
 p {
