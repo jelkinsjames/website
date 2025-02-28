@@ -49,6 +49,12 @@ nav {
   background-color: var(--primary-color);
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .navbar {
   display: flex;
   justify-content: center;
