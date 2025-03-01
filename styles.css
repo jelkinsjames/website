@@ -94,6 +94,23 @@ nav {
   transition: all 0.3s ease-in-out;
 }
 
+#games-container {
+  margin: 20px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.game-entry {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.game-entry:last-child {
+  border-bottom: none;
+}
+
 /* Stacks items vertically on small screens */
 @media (max-width: 600px) {
   .navbar {
