@@ -39,3 +39,13 @@ function displayGames(games) {
   });
 }
 
+function loadPGN(pgnFile) {
+  fetch(pgnFile)
+      .then(response => response.text())
+      .then(pgn => {
+          document.getElementById("pgn-input").value = pgn;
+          // Here you would initialize the PGN viewer if using a library like Chessboard.js
+      })
+      .catch(error => console.error("Error loading PGN:", error));
+}
+

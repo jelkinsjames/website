@@ -29,6 +29,7 @@ h2 {
   font-size: 20px;
   color: var(--secondary-color);
   margin: 20px;
+  text-align: center;
 }
 
 p {
@@ -109,6 +110,33 @@ nav {
 
 .game-entry:last-child {
   border-bottom: none;
+}
+
+#otb-games-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#otb-games-table th, #otb-games-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#otb-games-table th {
+  background-color: #5b6fb0;
+  color: white;
+}
+
+#pgn-viewer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#pgn-input {
+  width: 100%;
+  font-family: monospace;
 }
 
 /* Stacks items vertically on small screens */
