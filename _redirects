@@ -1,2 +1,2 @@
-# Simple Redirect from the index to my welcome page.
-/index.html /welcome.html
+# Redirect old welcome page links to the home page.
+/welcome.html /index.html 301

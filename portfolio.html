@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Julian Elkins James</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="logo" href="index.html">Julian Elkins James</a>
+      <ul class="navbar nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="footage.html">Footage</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="portfolio">
+    <h1>Portfolio</h1>
+    <p>A growing home for my hardware and software security technology projects.</p>
+
+    <article class="project-card">
+      <p class="project-kicker">University of Washington ENGINE 2023</p>
+      <h2>Chameleon: Electrical Musical Instrument Platform</h2>
+      <p>
+        Chameleon is an open-source, reprogrammable, digital modular synthesizer platform built around the YASE synthesis engine. The goal was to create a Eurorack-friendly module that could teach digital signal processing through music production while communicating with analog modular gear and other Chameleon units.
+      </p>
+
+      <div class="project-images">
+        <figure>
+          <img src="assets/chameleon-concept.png" alt="Chameleon modular synthesizer concept drawing">
+          <figcaption>Module concept</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/chameleon-architecture.png" alt="Chameleon system architecture block diagram">
+          <figcaption>System architecture</figcaption>
+        </figure>
+      </div>
+
+      <h3>Project Scope</h3>
+      <ul>
+        <li>Designed toward a digital modular synth that can act as a waveform generator, filter, effect, sequencer, or other programmable module.</li>
+        <li>Used a Xilinx Zynq 7020 on the Arty-Z7 platform for ARM plus FPGA audio processing.</li>
+        <li>Integrated digital audio I/O concepts around S/PDIF, I2S, and DIX4192-style routing.</li>
+        <li>Used PCM1863 ADC and PCM5242 DAC components for line-level analog audio input and output.</li>
+        <li>Built a front-panel UI concept around four LEDs, four rotary encoders, four toggle switches, and an ATSAMD21 microcontroller over I2C.</li>
+      </ul>
+
+      <h3>Results</h3>
+      <ul>
+        <li>Designed, ordered, and assembled 7+ printed circuit boards.</li>
+        <li>Produced working transceiver, I/O, and ADC boards.</li>
+        <li>Verified successful I2C communication between the host board and peripheral PCBs.</li>
+        <li>Ran YASE outputting sound from Le Potato as part of the prototype system.</li>
+        <li>Built hands-on experience with KiCad, Linux, GitHub, SMD soldering, thru-hole soldering, and reflow assembly.</li>
+      </ul>
+
+      <p class="project-links">
+        <a href="https://github.com/jelkinsjames/chameleon-PCB">GitHub Repository</a>
+        <a href="https://www.ece.uw.edu/wp-content/uploads/2023/06/2023_ENGINE_Team18_Poster.pdf">UW ENGINE Poster</a>
+      </p>
+    </article>
+  </section>
+</body>
+</html>
